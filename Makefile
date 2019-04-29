@@ -2,7 +2,7 @@ LINKER        = g++
 LINKERFLAGS   =  -s
 COMPILER      = g++
 COMPILERFLAGS =  -std=gnu++14 -Wall -g
-BIN           = enot-scanner
+BIN           = lynx-scanner
 LIBS          = -lboost_filesystem -lboost_system -lquadmath
 vpath %.cpp src
 vpath %.o build
