@@ -27,7 +27,7 @@ namespace enot_scanner{
         {const_cast<char32_t*>(U""),     Lexem_code::Kw_bezzn32,         0}, // 21:  беззнач32
 		{const_cast<char32_t*>(U""),     Lexem_code::Kw_bezzn64,         0}, // 22:  беззнач64
 		{const_cast<char32_t*>(U""),     Lexem_code::Kw_bezzn128,        0}, // 24:  беззн128
-		{const_cast<char32_t*>(U""),     Lexem_code:: Kw_besconechno,    0}, // 25:  бесконечно
+		{const_cast<char32_t*>(U""),     Lexem_code::Kw_besconechno,    0}, // 25:  бесконечно
      
 
         {const_cast<char32_t*>(U"екры"), Lexem_code::Id,                27}, // 26:  в...

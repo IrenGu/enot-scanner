@@ -36,13 +36,13 @@ int main(int argc, char* argv[])
     et.ec_                   = std::make_shared<Error_count>();
     et.ids_trie_             = std::make_shared<Char_trie>();
     et.strs_trie_            = std::make_shared<Char_trie>();
-    auto              lynxsc = std::make_shared<lynx_scanner::Scanner>(loc, et);
+    auto              enotsc = std::make_shared<enot_scanner::Scanner>(loc, et);
 
 // #define DEBUG
 #ifdef DEBUG
     printf("There is command line argument %s.\n", argv[1]);
 #else
-    test_lynx_scaner(lynxsc);
+    test_enot_scaner(enotsc);
     et.ec_->print();
 #endif
     return Success;
