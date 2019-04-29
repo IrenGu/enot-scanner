@@ -11,10 +11,10 @@
 #include "../include/usage.h"
 
 static const char* usage_str =
-    R"~(lynx-scanner
+    R"~(enot-scanner
 Copyright (c) Gavrilov V.S., 2019
-lynx-scanner is a program for a testing of lexical analysis of the educational
-programming language Lynx.
+enot-scanner is a program for a testing of lexical analysis of the educational
+programming language Enot.
 
 This program is free sofwtware, and it is licensed under the GPLv3 license.
 There is NO warranty, not even MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.

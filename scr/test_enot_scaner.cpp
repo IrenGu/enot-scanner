@@ -7,12 +7,12 @@
 
 void test_enot_scaner(const std::shared_ptr<enot_scanner::Scanner>& enotsc)
 {
-    lynx_scanner::Lynx_token lti;
-    lynx_scanner::Lexem_code llc;
+    enot_scanner::Enot_token lti;
+    enot_scanner::Lexem_code llc;
     do{
-        lti    = lynxsc->current_lexeme();
+        lti    = enotsc->current_lexeme();
         llc   = lti.lexeme_.code_;
-        auto s = lynxsc->token_to_string(lti);
+        auto s = enotc->token_to_string(lti);
         puts(s.c_str());
-    }while(llc != lynx_scanner::Lexem_code::Nothing);
+    }while(llc != enot_scanner::Lexem_code::Nothing);
 }

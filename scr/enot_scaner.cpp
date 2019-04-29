@@ -1552,7 +1552,7 @@ namespace enot_scanner{
         }
     }
 
-    ascaner::Token<lynx_scanner::Lexeme_info> Scanner::current_lexeme()
+    ascaner::Token<enot_scanner::Lexeme_info> Scanner::current_lexeme()
     {
         automaton_           = Automaton_name::Start;
         token_.lexeme_.code_ = Lexem_code::Nothing;
@@ -1696,7 +1696,7 @@ namespace enot_scanner{
 		"Comma",                        "Kw_golovnaya"
     };
 
-    std::string Scanner::lexeme_to_string(const lynx_scanner::Lexeme_info& li)
+    std::string Scanner::lexeme_to_string(const enot_scanner::Lexeme_info& li)
     {
         std::string result;
         auto        lc     = li.code_;
