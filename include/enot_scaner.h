@@ -5,19 +5,19 @@
 #   include "../include/abstract_scaner.h"
 #   include "../include/category.h"
 namespace enot_scanner{
-    using Enot_token = ascaner::Token<lynx_scanner::Lexeme_info>;
+    using Enot_token = ascaner::Token<enot_scanner::Lexeme_info>;
 
-    class Scanner : public ascaner::Abstract_scaner<lynx_scanner::Lexeme_info>{
+    class Scanner : public ascaner::Abstract_scaner<enot_scanner::Lexeme_info>{
     public:
         Scanner()               = default;
         Scanner(const ascaner::Location_ptr& location, const Errors_and_tries& et) :
-            ascaner::Abstract_scaner<lynx_scanner::Lexeme_info>(location, et) {};
+            ascaner::Abstract_scaner<enot_scanner::Lexeme_info>(location, et) {};
         Scanner(const Scanner&) = default;
         virtual ~Scanner()      = default;
 
-        ascaner::Token<lynx_scanner::Lexeme_info> current_lexeme() override;
+        ascaner::Token<enot_scanner::Lexeme_info> current_lexeme() override;
 
-        std::string lexeme_to_string(const lynx_scanner::Lexeme_info& li) override;
+        std::string lexeme_to_string(const enot_scanner::Lexeme_info& li) override;
     private:
         enum class Automaton_name{
             Start,     Unknown,          Keyword, Id,
